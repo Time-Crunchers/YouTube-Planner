@@ -11,7 +11,11 @@ import EventKit
 
 class Calender: UIViewController {
     
-    var calendar =  Calendar.Identifier.gregorian
+    let calendar = [Calendar]()
+    
+    @IBAction func addButton(_ sender: UIButton) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

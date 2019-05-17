@@ -15,6 +15,7 @@
 		148BCCDC228494F4009613CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148BCCDA228494F4009613CA /* LaunchScreen.storyboard */; };
 		148BCCE42284976D009613CA /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148BCCE32284976D009613CA /* List.swift */; };
 		148BCCE62284977D009613CA /* Calender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148BCCE52284977D009613CA /* Calender.swift */; };
+		14D506CD228F2D6400775A15 /* NotePadTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D506CC228F2D6400775A15 /* NotePadTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		148BCCDD228494F4009613CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		148BCCE32284976D009613CA /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		148BCCE52284977D009613CA /* Calender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calender.swift; sourceTree = "<group>"; };
+		14D506CC228F2D6400775A15 /* NotePadTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePadTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				148BCCDA228494F4009613CA /* LaunchScreen.storyboard */,
 				148BCCDD228494F4009613CA /* Info.plist */,
 				148BCCD5228494F3009613CA /* YouTubePlanner.xcdatamodeld */,
+				14D506CC228F2D6400775A15 /* NotePadTVC.swift */,
 			);
 			path = YouTubePlanner;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				148BCCD1228494F3009613CA /* ViewController.swift in Sources */,
 				148BCCE42284976D009613CA /* List.swift in Sources */,
 				148BCCD7228494F3009613CA /* YouTubePlanner.xcdatamodeld in Sources */,
+				14D506CD228F2D6400775A15 /* NotePadTVC.swift in Sources */,
 				148BCCCF228494F3009613CA /* AppDelegate.swift in Sources */,
 				148BCCE62284977D009613CA /* Calender.swift in Sources */,
 			);
