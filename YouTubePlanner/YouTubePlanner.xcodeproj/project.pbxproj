@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		147EAA462293163F00DA1D5A /* CalendarTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147EAA452293163F00DA1D5A /* CalendarTVC.swift */; };
 		148BCCCF228494F3009613CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148BCCCE228494F3009613CA /* AppDelegate.swift */; };
 		148BCCD1228494F3009613CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148BCCD0228494F3009613CA /* ViewController.swift */; };
 		148BCCD4228494F3009613CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148BCCD2228494F3009613CA /* Main.storyboard */; };
 		148BCCD7228494F3009613CA /* YouTubePlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 148BCCD5228494F3009613CA /* YouTubePlanner.xcdatamodeld */; };
 		148BCCD9228494F4009613CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148BCCD8228494F4009613CA /* Assets.xcassets */; };
 		148BCCDC228494F4009613CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148BCCDA228494F4009613CA /* LaunchScreen.storyboard */; };
-		148BCCE42284976D009613CA /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148BCCE32284976D009613CA /* List.swift */; };
-		148BCCE62284977D009613CA /* Calender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148BCCE52284977D009613CA /* Calender.swift */; };
 		14D506CD228F2D6400775A15 /* NotePadTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D506CC228F2D6400775A15 /* NotePadTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		147EAA452293163F00DA1D5A /* CalendarTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTVC.swift; sourceTree = "<group>"; };
 		148BCCCB228494F3009613CA /* YouTubePlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubePlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		148BCCCE228494F3009613CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		148BCCD0228494F3009613CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,8 +27,6 @@
 		148BCCD8228494F4009613CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		148BCCDB228494F4009613CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		148BCCDD228494F4009613CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		148BCCE32284976D009613CA /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
-		148BCCE52284977D009613CA /* Calender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calender.swift; sourceTree = "<group>"; };
 		14D506CC228F2D6400775A15 /* NotePadTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePadTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,14 +62,13 @@
 			children = (
 				148BCCCE228494F3009613CA /* AppDelegate.swift */,
 				148BCCD0228494F3009613CA /* ViewController.swift */,
-				148BCCE32284976D009613CA /* List.swift */,
-				148BCCE52284977D009613CA /* Calender.swift */,
+				14D506CC228F2D6400775A15 /* NotePadTVC.swift */,
+				147EAA452293163F00DA1D5A /* CalendarTVC.swift */,
 				148BCCD2228494F3009613CA /* Main.storyboard */,
 				148BCCD8228494F4009613CA /* Assets.xcassets */,
 				148BCCDA228494F4009613CA /* LaunchScreen.storyboard */,
 				148BCCDD228494F4009613CA /* Info.plist */,
 				148BCCD5228494F3009613CA /* YouTubePlanner.xcdatamodeld */,
-				14D506CC228F2D6400775A15 /* NotePadTVC.swift */,
 			);
 			path = YouTubePlanner;
 			sourceTree = "<group>";
@@ -148,11 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				148BCCD1228494F3009613CA /* ViewController.swift in Sources */,
-				148BCCE42284976D009613CA /* List.swift in Sources */,
+				147EAA462293163F00DA1D5A /* CalendarTVC.swift in Sources */,
 				148BCCD7228494F3009613CA /* YouTubePlanner.xcdatamodeld in Sources */,
 				14D506CD228F2D6400775A15 /* NotePadTVC.swift in Sources */,
 				148BCCCF228494F3009613CA /* AppDelegate.swift in Sources */,
-				148BCCE62284977D009613CA /* Calender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

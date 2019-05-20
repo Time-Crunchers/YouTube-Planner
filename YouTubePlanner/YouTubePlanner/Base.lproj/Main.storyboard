@@ -18,28 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZm-WE-0EU">
-                                <rect key="frame" x="172" y="211" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Idea"/>
-                                <connections>
-                                    <segue destination="yZg-Zy-H18" kind="presentation" id="xX0-YT-RUa"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQy-FC-un4">
-                                <rect key="frame" x="156" y="291" width="62" height="30"/>
+                                <rect key="frame" x="156" y="339" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calender"/>
                                 <connections>
-                                    <segue destination="3ju-h6-p9M" kind="presentation" id="jxZ-fW-YTg"/>
+                                    <segue destination="lgx-Zt-6VJ" kind="show" id="g3n-s6-R9Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKh-cK-7sq">
                                 <rect key="frame" x="172" y="363" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Test"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZm-WE-0EU">
+                                <rect key="frame" x="172" y="279" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Idea"/>
                                 <connections>
-                                    <segue destination="CdD-tD-gR3" kind="show" id="SMf-2j-CnG"/>
+                                    <segue destination="CdD-tD-gR3" kind="show" id="i2l-o5-vFb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,45 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="976.79999999999995" y="26.53673163418291"/>
-        </scene>
-        <!--List-->
-        <scene sceneID="Od5-uD-5yd">
-            <objects>
-                <viewController id="yZg-Zy-H18" customClass="List" customModule="YouTubePlanner" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="E2n-Ch-UrU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbx-rd-Q9K">
-                                <rect key="frame" x="321" y="617" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+1"/>
-                                <connections>
-                                    <action selector="addButton:" destination="yZg-Zy-H18" eventType="touchUpInside" id="QbK-gS-KKo"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Me8-Tv-IYB">
-                                <rect key="frame" x="16" y="20" width="335" height="589"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zf3-7h-yqW">
-                                <rect key="frame" x="16" y="617" width="33" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Main"/>
-                                <connections>
-                                    <segue destination="zyz-iV-oGf" kind="presentation" id="ZGB-bJ-hpd"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="IkW-n0-BRb"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sQM-eN-sfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2388" y="-363.86806596701655"/>
+            <point key="canvasLocation" x="1506" y="-672"/>
         </scene>
         <!--Note PadTVC-->
         <scene sceneID="psh-5J-PDd">
@@ -113,53 +71,11 @@
                             <outlet property="delegate" destination="CdD-tD-gR3" id="cvK-aK-aph"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="3XX-i9-aro"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZp-p4-Fug" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3304.8000000000002" y="-78.710644677661179"/>
-        </scene>
-        <!--Calender-->
-        <scene sceneID="fNx-zC-b6y">
-            <objects>
-                <viewController id="3ju-h6-p9M" customClass="Calender" customModule="YouTubePlanner" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pzh-PL-7nf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUj-Dv-nG4">
-                                <rect key="frame" x="16" y="617" width="33" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Main"/>
-                                <connections>
-                                    <segue destination="zyz-iV-oGf" kind="presentation" id="Dpo-gi-TAM"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="75m-Dm-0xZ">
-                                <rect key="frame" x="16" y="20" width="343" height="589"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeY-oY-oGC">
-                                <rect key="frame" x="329" y="617" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+"/>
-                                <connections>
-                                    <action selector="addButton:" destination="3ju-h6-p9M" eventType="touchUpInside" id="Op0-a5-WVs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l16-z3-BVE">
-                                <rect key="frame" x="329" y="617" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="UGf-Pr-Mlj"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oYm-Ti-nTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2388" y="405.24737631184411"/>
+            <point key="canvasLocation" x="2420" y="-803"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vL7-9h-aPy">
@@ -179,8 +95,33 @@
             </objects>
             <point key="canvasLocation" x="613.60000000000002" y="-671.51424287856082"/>
         </scene>
+        <!--Note PadTVC-->
+        <scene sceneID="50i-Fs-CAu">
+            <objects>
+                <tableViewController id="lgx-Zt-6VJ" customClass="NotePadTVC" customModule="YouTubePlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Abe-sZ-nWq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Note" id="HnK-Y3-jmY">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HnK-Y3-jmY" id="6yq-XQ-LHb">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lgx-Zt-6VJ" id="GdF-Pg-Jq3"/>
+                            <outlet property="delegate" destination="lgx-Zt-6VJ" id="jRO-5i-PQG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kok-XE-R0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2521" y="-85"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Dpo-gi-TAM"/>
-    </inferredMetricsTieBreakers>
 </document>
