@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var addButton: UIButton!
     
 
     override func viewDidLoad() {
