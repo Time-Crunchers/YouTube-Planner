@@ -43,7 +43,8 @@ class NotePadTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Note", for: indexPath)
 
-        // Configure the cell...
+        let newnote = note[indexPath.row]
+        cell.textLabel?.text = newnote.note
 
         return cell
     }

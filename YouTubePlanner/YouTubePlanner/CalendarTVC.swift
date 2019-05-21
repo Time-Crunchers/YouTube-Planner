@@ -11,8 +11,11 @@ import UIKit
 class CalendarTVC: UITableViewController {
     
     @IBAction func addButton(_ sender: Any) {
-        
+        show()
     }
+    
+    var date: [Calendar] = [Calendar()]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,7 +43,8 @@ class CalendarTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Note", for: indexPath)
         
-        // Configure the cell...
+        let newDate = date[indexPath.row]
+        cell.textLabel?.text = newDate.date
         
         return cell
     }
@@ -90,6 +94,49 @@ class CalendarTVC: UITableViewController {
      // Pass the selected object to the new view controller.
      }
      */
+    
+    func show () {
+        //Creating UIAlertController and
+        //Setting title and message for the alert dialog
+        let alertController = UIAlertController(title: "Enter details?", message: "Enter your name and email", preferredStyle: .alert)
+        
+        //the confirm action taking the inputs
+        let confirmAction = UIAlertAction(title: "Enter", style: .default) { (_) in
+            
+            //getting the input values from user
+            let name = alertController.textFields?[0].text
+            
+            let newNote = Notes()
+            newNote.note = name
+        }
+        
+        //the cancel action doing nothing
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+        
+        //adding textfields to our dialog box
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Enter idea"
+        }
+        
+        //adding the action to dialogbox
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        
+        //finally presenting the dialog box
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func getCoreData() {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        do {
+            date = try context.fetch(Calendar.fetchRequest())
+        } catch {
+            print("Data Not Found")
+        }
+    }
+    
+    
     
 }
 
