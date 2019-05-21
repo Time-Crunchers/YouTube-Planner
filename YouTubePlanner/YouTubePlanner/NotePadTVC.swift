@@ -14,11 +14,12 @@ class NotePadTVC: UITableViewController {
         show()
     }
     
-    var note: [Notes] = [Notes()]
-    
+    //var note: [Notes] = [Notes()]
+    var note:[Notes] = []
+    //var note = [Notes]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+     
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -26,7 +27,12 @@ class NotePadTVC: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getCoreData()
+        self.tableView.reloadData()
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -42,7 +48,8 @@ class NotePadTVC: UITableViewController {
  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Note", for: indexPath)
-
+   
+        print("Index: \(indexPath.row)")
         let newnote = note[indexPath.row]
         cell.textLabel?.text = newnote.note
 
