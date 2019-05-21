@@ -14,8 +14,8 @@ class CalendarTVC: UITableViewController {
         show()
     }
     
-    var date: [Calendar] = [Calendar()]
-    
+    //var date: [Calendar] = [Calendar()]
+    var date:[Calendar] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +25,10 @@ class CalendarTVC: UITableViewController {
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        getCoreData()
     }
     
     // MARK: - Table view data source
@@ -41,7 +45,7 @@ class CalendarTVC: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Note", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Calendar", for: indexPath)
         
         let newDate = date[indexPath.row]
         cell.textLabel?.text = newDate.date
