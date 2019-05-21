@@ -56,6 +56,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="oXl-4e-5vZ">
+                            <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem title="add" id="HXB-Nb-Bke">
+                                    <connections>
+                                        <action selector="addButton:" destination="CdD-tD-gR3" id="Au6-W0-dG1"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Note" id="sG2-2r-Qh5">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -95,14 +106,25 @@
             </objects>
             <point key="canvasLocation" x="613.60000000000002" y="-671.51424287856082"/>
         </scene>
-        <!--Note PadTVC-->
+        <!--CalendarTVC-->
         <scene sceneID="50i-Fs-CAu">
             <objects>
-                <tableViewController id="lgx-Zt-6VJ" customClass="NotePadTVC" customModule="YouTubePlanner" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="lgx-Zt-6VJ" customClass="CalendarTVC" customModule="YouTubePlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Abe-sZ-nWq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="sqN-Zd-fPd">
+                            <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem title="Add" id="Xe0-1X-VV2">
+                                    <connections>
+                                        <action selector="addButton:" destination="lgx-Zt-6VJ" id="m3t-nM-KI9"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Note" id="HnK-Y3-jmY">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>

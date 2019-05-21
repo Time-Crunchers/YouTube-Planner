@@ -10,6 +10,12 @@ import UIKit
 
 class NotePadTVC: UITableViewController {
 
+    @IBAction func addButton(_ sender: Any) {
+        show()
+    }
+    
+    var note: [Notes] = [Notes()]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +43,8 @@ class NotePadTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Note", for: indexPath)
 
-        // Configure the cell...
+        let newnote = note[indexPath.row]
+        cell.textLabel?.text = newnote.note
 
         return cell
     }
@@ -88,4 +95,47 @@ class NotePadTVC: UITableViewController {
     }
     */
 
+    func show () {
+        //Creating UIAlertController and
+        //Setting title and message for the alert dialog
+        let alertController = UIAlertController(title: "Enter details?", message: "Enter your name and email", preferredStyle: .alert)
+        
+        //the confirm action taking the inputs
+        let confirmAction = UIAlertAction(title: "Enter", style: .default) { (_) in
+            
+            //getting the input values from user
+            let name = alertController.textFields?[0].text
+            
+            let newNote = Notes()
+            newNote.note = name
+        }
+        
+        //the cancel action doing nothing
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+        
+        //adding textfields to our dialog box
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Enter idea"
+        }
+        
+        //adding the action to dialogbox
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        
+        //finally presenting the dialog box
+        self.present(alertController, animated: true, completion: nil)
+    }
+
+    func getCoreData() {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        do {
+           note = try context.fetch(Notes.fetchRequest())
+        } catch {
+            print("Data Not Found")
+        }
+    }
+   
+   
+    
 }
